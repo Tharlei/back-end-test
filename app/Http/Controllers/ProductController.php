@@ -17,7 +17,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all('id', 'name', 'price', 'sku');
+        $products = Product::select('id', 'name', 'price', 'sku')
+            ->orderBy('id')
+            ->get();
 
         foreach ($products as $product) {
             $product->price = floatval($product->price);
@@ -70,11 +72,13 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         $product = Product::find($id);
+        $inputs = $request->all();
+        $inputs['price'] = str_replace(',', '.', $inputs['price']);
 
         if (empty($product))
             return response()->json('', 404);
 
-        $product->fill($request->all());
+        $product->fill($inputs);
         $product->update();
 
         return response()->json($product, 200);
