@@ -48,7 +48,7 @@
 
 ## Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação: https://api-focus-concursos.herokuapp.com
+> Link do deploy da aplicação: https://api-focus-concursos.herokuapp.com/api
 
 > Link da documentação da API: https://app.swaggerhub.com/apis-docs/TharleiAleixo/focus_concursos/1.0#/
 
