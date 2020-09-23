@@ -35,7 +35,9 @@ class ProductController extends Controller
      */
     public function store(StoreProduct $request)
     {
-        $product = Product::create($request->all());
+        $inputs = $request->all();
+        $inputs['price'] = str_replace(',', '.', $inputs['price']);
+        $product = Product::create($inputs);
 
         Mail::to('ti@focusconcursos.com')->send(new CreatedProduct($product));
 
