@@ -13,9 +13,9 @@ O teste consiste em gerar uma API que tenha os recursos de CRUD de produto e rea
 Utilize sqlite como banco de dados para o teste.
 
 Relação de tarefas para executar o teste:
-1. Criar migrations e seeders para a tabela produto;
-2. Criar comando no composer.json que permita executar refresh e seeder no banco;
-3. Cadastrar produto com os seguintes dados:
+1. Criar migrations e seeders para a tabela produto; ok
+2. Criar comando no composer.json que permita executar refresh e seeder no banco; ok
+3. Cadastrar produto com os seguintes dados: OK
   - nome do produto;
   - sku;
   - peso;
@@ -23,18 +23,18 @@ Relação de tarefas para executar o teste:
   - largura;
   - profundidade;
   - valor;
-4. Criar validador;
-5. Consultar produto por nome ou id. A consulta deve retornar apenas nome, id, sku e valor, em formato JSON ou XML;
-6. Editar os dados de um produto;
-7. Excluir um produto;
-8. Consultar o valor de frete entre 02 CEP's para um produto, em quantidade N, usando serviço dos Correios;
-9. Enviar uma notificação por email ao cadastrar um produto. O email pode ser enviado para o [mailtrap](http://mailtrap.io);
+4. Criar validador; ok
+5. Consultar produto por nome ou id. A consulta deve retornar apenas nome, id, sku e valor, em formato JSON ou XML; OK
+6. Editar os dados de um produto; ok
+7. Excluir um produto; OK
+8. Consultar o valor de frete entre 02 CEP's para um produto, em quantidade N, usando serviço dos Correios; OK
+9. Enviar uma notificação por email ao cadastrar um produto. O email pode ser enviado para o [mailtrap](http://mailtrap.io); OK
 10. Escrever testes;
 
 
 ## Considerações para o teste
-1. Utilizar linguagem PHP;
-2. Utilizar o framework [Laravel](https://laravel.com);
+1. Utilizar linguagem PHP; ok
+2. Utilizar o framework [Laravel](https://laravel.com); ok
 3. Utilizar repository pattern;
 4. Implementar classes de serviços para chamar as classes de regras de negócio;
 5. Utilizar uma camada de apresentação/transformação de dados;
