@@ -44,6 +44,8 @@
 
 :heavy_check_mark: Calculo de frete com produto
 
+:heavy_check_mark: Testes de integração
+
 ## Deploy da Aplicação :dash:
 
 > Link do deploy da aplicação: https://api-focus-concursos.herokuapp.com
