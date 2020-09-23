@@ -82,6 +82,12 @@ Copie o .env.example:
 cp .env.example .env
 ```
 
+Execute atualizações do banco
+
+```
+composer run db-remake
+```
+
 Por fim, inicie o projeto:
 
 ```

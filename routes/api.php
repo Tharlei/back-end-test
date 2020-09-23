@@ -5,6 +5,10 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProductSearchController;
 use App\Http\Controllers\ProductShippingController;
 
+Route::get('/', function () {
+    return response()->json(['platform' => 'API Focus Concursos'], 200);
+});
+
 Route::prefix('products')->group(function () {
     Route::get('/search', [ProductSearchController::class, 'show'])->name('product.search');
     Route::get('/{id}/shipping', [ProductShippingController::class, 'show'])->name('product.shipping');
