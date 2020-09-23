@@ -1,54 +1,100 @@
-# Teste para desenvolvedor back-end
-O Focus Concursos é uma empresa que oferece cursos online preparatórios para concurso público.
-> https://focusconcursos.com.br 
+<p align="center">
+ <img width="250" src="https://legado.focusconcursos.com.br/focus-online/skin/default/images/logo-color.png"/>
+</p>
 
-## Instruções
-1. Faça um fork deste repositório;
-2. Implemente os items descritos na próxima seção;
-3. Envie email para luis@grupofocus.com.br com o assunto **Vaga back-end**;
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=laravel&message=framework&color=orange&style=for-the-badge&logo=laravel"/>
+  <img src="https://img.shields.io/static/v1?label=sqlite&message=use&color=blue&style=for-the-badge&logo=sqlite"/>
+  <img src="https://img.shields.io/static/v1?label=Heroku&message=deploy&color=purple&style=for-the-badge&logo=heroku"/>
+</p>
 
-## O que esperamos que desenvolva
-O teste consiste em gerar uma API que tenha os recursos de CRUD de produto e realize o cálculo de frete, usando serviço dos Correios, entre 02 CEP's.
+> Status do Projeto: :heavy_check_mark: (concluido)
 
-Utilize sqlite como banco de dados para o teste.
+### Tópicos 
 
-Relação de tarefas para executar o teste:
-1. Criar migrations e seeders para a tabela produto; ok
-2. Criar comando no composer.json que permita executar refresh e seeder no banco; ok
-3. Cadastrar produto com os seguintes dados: OK
-  - nome do produto;
-  - sku;
-  - peso;
-  - altura;
-  - largura;
-  - profundidade;
-  - valor;
-4. Criar validador; ok
-5. Consultar produto por nome ou id. A consulta deve retornar apenas nome, id, sku e valor, em formato JSON ou XML; OK
-6. Editar os dados de um produto; ok
-7. Excluir um produto; OK
-8. Consultar o valor de frete entre 02 CEP's para um produto, em quantidade N, usando serviço dos Correios; OK
-9. Enviar uma notificação por email ao cadastrar um produto. O email pode ser enviado para o [mailtrap](http://mailtrap.io); OK
-10. Escrever testes;
+:small_blue_diamond: [Descrição do projeto](#descrição-do-projeto)
+
+:small_blue_diamond: [Funcionalidades](#funcionalidades)
+
+:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+
+:small_blue_diamond: [Pré-requisitos](#pré-requisitos)
+
+## Descrição do projeto 
+
+<p align="justify">
+  API de produtos, projeto realizado para execução do teste para Focus Concursos
+</p>
+
+## Funcionalidades
+
+:heavy_check_mark: Listagem de produtos 
+
+:heavy_check_mark: Adição de produto  
+
+:heavy_check_mark: Envio de e-mail ao adicionar produto
+
+:heavy_check_mark: Edição de produto 
+
+:heavy_check_mark: Exclusão de produto 
+
+:heavy_check_mark: Buscar produto
+
+:heavy_check_mark: Integração com API do Correios
+
+:heavy_check_mark: Calculo de frete com produto
+
+## Deploy da Aplicação :dash:
+
+> Link do deploy da aplicação: https://api-focus-concursos.herokuapp.com
+
+## Pré-requisitos
+
+:warning: [Composer](https://getcomposer.org/)
+
+## Como rodar a aplicação :arrow_forward:
+
+No terminal, clone o projeto: 
+
+```
+git clone https://github.com/Tharlei/back-end-test
+```
+
+Ainda no terminal, entre na pasta:
+
+```
+cd back-end-test
+```
+
+Instale as dependências:
+
+```
+composer install
+```
+
+Copie o .env.example:
+
+```
+cp .env.example .env
+```
+
+Por fim, inicie o projeto:
+
+```
+composer run dev
+```
+
+## Linguagens, dependências e libs utilizadas :books:
+
+- [Laravel](https://laravel.com/)
+
+## Desenvolvedor :octocat:
+
+[<img src="https://avatars2.githubusercontent.com/u/32899049?s=460&u=946f73939bb511fa8ae40ed80764cc4dbffe359f&v=4" width=115><br><sub>Tharlei Aleixo</sub>](https://github.com/Tharlei)
 
 
-## Considerações para o teste
-1. Utilizar linguagem PHP; ok
-2. Utilizar o framework [Laravel](https://laravel.com); ok
-3. Utilizar repository pattern;
-4. Implementar classes de serviços para chamar as classes de regras de negócio;
-5. Utilizar uma camada de apresentação/transformação de dados;
-6. Utilize interface para a classe de cálculo de frete;
-7. Utilize o service container para resolver a classe que implementa a interface de cáculo de frete, e registre num service provider chamado ApplicationServiceProvider.
-8. Não é permitido utilizar pacotes além dos que fazem parte da instalação padrão do Laravel;
+## Licença 
 
+The [MIT License]() (MIT)
 
-## O que iremos avaliar
-1. Conhecimento da linguagem;
-2. Conhecimento do framework;
-3. Qualidade do código;
-4. Abordagem para solução do teste;
-5. Conhecimento de orientação a objetos;
-6. Conhecimento de design patterns;
-7. Conhecimento de conceitos do SOLID;
-8. Conhecimento sobre API REST;
+Copyright :copyright: 2020 - back-end-test
