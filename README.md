@@ -48,6 +48,8 @@
 
 > Link do deploy da aplicação: https://api-focus-concursos.herokuapp.com
 
+> Link da documentação da API: https://app.swaggerhub.com/apis-docs/TharleiAleixo/focus_concursos/1.0#/
+
 ## Pré-requisitos
 
 :warning: [Composer](https://getcomposer.org/)
